@@ -1,0 +1,128 @@
+.header {
+  position: static;
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  background: #fff;
+}
+.header .header_wrap {
+  width: 1180px;
+  margin: auto;
+  height: 70px;
+}
+.header .header_wrap .header_logo {
+  margin-top: 10px;
+  float: left;
+}
+.header .header_wrap ul {
+  float: right;
+  font-weight: bold;
+}
+.header .header_wrap ul li {
+  float: left;
+}
+.header .header_wrap ul li a {
+  padding: 10px 15px;
+  line-height: 70px;
+}
+.header .header_wrap ul li a:hover {
+  color: #E94840;
+}
+.header .header_wrap ul li .active {
+  color: #E94840;
+}
+.header .header_wrap ul .chang_city {
+  margin-right: 50px;
+}
+.header .header_wrap ul .chang_city a img {
+  vertical-align: middle;
+  width: 20px;
+}
+.header .header_wrap ul .shop a {
+  background-color: #E94840;
+  padding: 4px 6px;
+  border-radius: 8px;
+  color: #fff;
+}
+.roll {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  animation: myMove 0.5s;
+}
+@keyframes myMove {
+  from {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+.banner .banner_wrap {
+  position: relative;
+}
+.banner .banner_wrap .carousel .swiper-wrapper div {
+  height: 420px;
+}
+.banner .banner_wrap .carousel .swiper-wrapper .banner1 {
+  background: url("http://www.daoway.cn/pcimages/banner1.jpg") center;
+}
+.banner .banner_wrap .carousel .swiper-wrapper .banner2 {
+  background: url("http://www.daoway.cn/pcimages/banner2.jpg") center;
+}
+.banner .banner_wrap .carousel .swiper-wrapper .banner3 {
+  background: url("http://www.daoway.cn/pcimages/banner3.jpg") center;
+}
+.banner .banner_wrap .banner_nav {
+  max-width: 1170px;
+  margin: auto;
+}
+.banner .banner_wrap .banner_nav div {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+.banner .banner_wrap .banner_nav div ul {
+  width: 180px;
+}
+.banner .banner_wrap .banner_nav div ul li {
+  background: #757881;
+  height: 42px;
+  line-height: 42px;
+  font-weight: bold;
+  padding-left: 45px;
+}
+.banner .banner_wrap .banner_nav div ul li:hover {
+  background-color: #60646d;
+}
+.banner .banner_wrap .banner_nav div ul li a {
+  position: relative;
+  color: #fff;
+}
+.banner .banner_wrap .banner_nav div ul li a img {
+  width: 6px;
+  margin-left: 20px;
+}
+.banner .banner_wrap .banner_nav div ul li a .act {
+  position: absolute;
+  top: 7px;
+  right: -71px;
+}
+.banner .banner_wrap .banner_nav div ul li .second {
+  position: absolute;
+  left: 180px;
+  top: 0;
+  display: none;
+}
+.banner .banner_wrap .banner_nav div ul li .second li {
+  width: 160px;
+  height: 42px;
+  background-color: #fff;
+}
+.banner .banner_wrap .banner_nav div ul li .second li a {
+  color: #000;
+}
+.content {
+  height: 1000px;
+}
