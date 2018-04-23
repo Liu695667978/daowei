@@ -1,0 +1,131 @@
+//头部css
+.header{
+  position: static;
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  background: #fff;
+  .header_wrap{
+    width: 1180px;
+    margin: auto;
+    height: 70px;
+    .header_logo{
+      margin-top: 10px;
+      float: left;
+    }
+    ul{
+      float: right;
+      font-weight: bold;
+      li{
+        float: left;
+        a{
+          padding: 10px 15px;
+          line-height: 70px;
+        }
+        & a:hover {
+          color: #E94840;
+        }
+        .active{
+          color: #E94840;
+        }
+      }
+      .chang_city{
+        margin-right: 50px;
+        a{
+          img{
+            vertical-align: middle;
+            width: 20px;
+          }
+        }
+      }
+      .shop{
+        a{
+          background-color: #E94840;
+          padding: 4px 6px;
+          border-radius: 8px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+//动画
+.roll{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  animation: myMove 0.5s
+}
+@keyframes myMove{
+  from{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+//保障样式
+.safe{
+  padding-top: 60px;
+  text-align: center;
+  h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 800;
+    i{
+      color: red;
+    }
+  }
+  p{
+    font-size: 22px;
+    color: #3d3838;
+  }
+  .safe_icon{
+    overflow: hidden;
+    ul{
+      width: 420px;
+      margin: auto;
+      margin-top: 20px;
+      li{
+        width: 33.33%;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        img{
+          width: 20px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+//热门城市样式
+.hotCity{
+  margin-top: 50px;
+  .hotCity_wrap{
+    width: 1200px;
+    margin: auto;
+    .hotCity_right{
+      font-size: 18px;
+      font-weight: 600;
+      float: left;
+      margin-right: 30px;
+    }
+    .hotCity_left{
+      display: flex;
+      flex-wrap: wrap;
+      a{
+        font-size: 16px;
+        text-align: center;
+        color: #898989;
+        width: 9%;
+        height: 30px;
+        font-weight: 200;
+        display: inline-block;
+      }
+    }
+  }
+}
