@@ -48,6 +48,7 @@
       }
   }
 }
+//动画
 .roll{
   position: fixed;
   z-index: 100;
@@ -57,11 +58,11 @@
 @keyframes myMove{
   from{
     transform: translateY(-100%);
-    opacity: 1;
+    opacity: 0;
   }
   to{
     transform: translateY(0);
-    opacity: 0;
+    opacity: 1;
   }
 }
 //banner样式
@@ -137,5 +138,172 @@
 }
 //主体样式
 .content{
-  height: 1000px;
+  box-sizing: border-box;
+  .content_wrap{
+    width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+    div{
+      box-sizing: border-box;
+    }
+    .content_tittle{
+      text-align: center;
+      .serviceIndex{
+        font-size: 28px;
+        font-weight: 800;
+        display: block;
+      }
+      .serviceType{
+        position: relative;
+        display: block;
+        margin-top: 15px;
+        font-size: 22px;
+        a{
+          color: #3d3838;
+          &:hover{
+            color: #E94840;
+          }
+        }
+        .more{
+          font-size: 18px;
+          color: #898989;
+          position: absolute;
+          right: 13px;
+        }
+      }
+    }
+    .pic_wrap{
+      margin-top: 30px;
+      overflow: hidden;
+      .content_pic{
+        float: left;
+        width: 230px;
+        height: 345px;
+        border: 1px solid #eaeaea;
+        padding: 10px;
+        margin: 0 4px;
+        &:hover{
+          box-shadow: 5px 5px 15px #ccc;
+        }
+        .serviceName{
+          font-size: 16px;
+          padding: 10px 0;
+          font-weight: 800;
+        }
+        .description{
+          padding: 5px 0;
+          font-size: 13px;
+          line-height: 18px;
+          color: #929292;
+        }
+        .price{
+          font-size: 14px;
+          padding: 5px 5px;
+          font-weight: 600;
+          line-height: 20px;
+          color: #fb474f;
+          margin-top: 10px;
+          .btn{
+            float: right;
+            width: 76px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: #fb474f;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+//保障样式
+.serve{
+  padding-top: 60px;
+  text-align: center;
+  h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 800;
+    i{
+      color: red;
+    }
+  }
+  p{
+    font-size: 22px;
+    color: #3d3838;
+  }
+  .serve_icon{
+    overflow: hidden;
+    ul{
+      width: 420px;
+      margin: auto;
+      margin-top: 20px;
+      li{
+        width: 33.33%;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        img{
+          width: 20px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+//热门城市样式
+.hotCity{
+  margin-top: 50px;
+  .hotCity_wrap{
+    width: 1200px;
+    margin: auto;
+    .hotCity_right{
+      font-size: 18px;
+      font-weight: 600;
+      float: left;
+      margin-right: 30px;
+    }
+    .hotCity_left{
+      display: flex;
+      flex-wrap: wrap;
+      a{
+        font-size: 16px;
+        text-align: center;
+        color: #898989;
+        width: 9%;
+        height: 30px;
+        font-weight: 200;
+        display: inline-block;
+      }
+    }
+  }
+}
+//合作伙伴
+.partner{
+  margin-top: 50px;
+  .partner_wrap{
+    width: 1200px;
+    margin: auto;
+    .partner_tittle{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .partner_text{
+      margin: 10px 0;
+      ul{
+        li{
+          margin-right: 1%;
+          padding: 10px;
+          width: 10%;
+          float: left;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
 }
