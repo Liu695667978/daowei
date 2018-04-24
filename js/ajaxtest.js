@@ -45,7 +45,14 @@ $.getJSON('http://localhost:3000/service', function (data) {
       return
     }else {
       console.log(a)
-      $('#c'+a).append('<div class="pic_wrap" id="pic'+a+'"></div>')
+      var picIndex = $('#c'+a).append('<div class="pic_wrap" id="pic'+a+'"></div>')
+
+      $(item).each(function (index, list) {
+        console.log(a);
+        console.log(list.imgUrl)
+        console.log($('#pic'+ a))
+        $('#pic'+ a).addClass('aaa')
+      })
       a++
     }
     // $(item).each(function (index, list) {
@@ -67,13 +74,7 @@ $.getJSON('http://localhost:3000/service', function (data) {
     // $('#c'+a).delegate(item+ a, 'each', function () {
     //   $('#pic'+ a).addClass('aaa')
     // })
-    $(item).each(function (index, list) {
-      console.log(a);
-      console.log(list.imgUrl)
-      console.log($('#pic'+ a))
-      var pic = document.getElementById('pic'+a)
-      $('#pic'+ a).addClass('aaa')
-    })
+
   })
 })
 .error(function () {
