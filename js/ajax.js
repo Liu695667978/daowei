@@ -8,7 +8,7 @@ $.getJSON('http://localhost:3000/service', function (data) {
     var dataDom= ''
     $(obj).each(function (index,item) {
       picDom += '<div class="content_pic">'+
-        '<a href="./detail.html?id='+index+'">'+
+        '<a href="./detail.html?key='+i+'?id='+index+'">'+
         '<img src="'+item.imgUrl+'" alt="">'+
         '<div class="serviceName">'+item.name+'</div>'+
         '<div class="description">'+item.description+'</div>'+
@@ -79,7 +79,6 @@ var dataDom = '<img src="'+data.imgUrl+'" alt="">'+
 
 })
 
-
 var num = 0
 /*$.getJSON('http://localhost:3000/comments?page='+num+'', function (data) {
   var dataDom =''
@@ -115,10 +114,6 @@ var num = 0
     $('.commentDetail').html(dataDom)
   })
 })*/
-
-
-
-
 $('#showpage a').click(function () {
   var index = $(this).index()
   console.log(index)
