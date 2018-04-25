@@ -32,7 +32,7 @@ $.getJSON('http://localhost:3000/servicepro', function (data) {
   var dataDom=''
   for (var i = 0; i < data.length; i++) {
     dataDom += '<li>\n' +
-                    '<a>\n' +
+                    '<a href="./comment.html?id='+i+'">\n' +
                       '<img src="'+data[i].imgUrl+'">\n' +
                       '<p class="top">\n'+
                         '<img src="'+data[i].iconUrl+'" alt="">\n' +
