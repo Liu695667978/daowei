@@ -26,7 +26,7 @@ $.getJSON('http://localhost:3000/service', function (data) {
     $('.partner_text ul').html(dataDom)
   })
 })
-
+//详情页数据
 $.getJSON('http://localhost:3000/servicepro', function (data) {
   var data =data.servicepro
   var dataDom=''
@@ -47,7 +47,7 @@ $.getJSON('http://localhost:3000/servicepro', function (data) {
     }
   $('#serve_pic ul').html(dataDom)
 })
-
+//图片列表页数据
 $.getJSON('http://localhost:3000/detail', function (data) {
 
 var dataDom = '<img src="'+data.imgUrl+'" alt="">'+
@@ -78,7 +78,7 @@ var dataDom = '<img src="'+data.imgUrl+'" alt="">'+
   console.log(dataDom)
 
 })
-
+//评论页数据
 var num = 0
 /*$.getJSON('http://localhost:3000/comments?page='+num+'', function (data) {
   var dataDom =''

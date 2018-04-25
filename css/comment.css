@@ -675,3 +675,6 @@ img{
   color: #fff;
 }
 
+#detailContainer .detailContent .navContent .navContentLeft .msg .info a .infoWrapper:hover{
+  background: #f8f8f8;
+}

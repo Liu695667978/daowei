@@ -1,42 +1,42 @@
 $.getJSON('http://localhost:3000/service', function (data) {
-  // for (var i = 0; i < data.length; i++) {
-  //   console.log(data[i].imgUrl)
-  //   // $('<img src="' + data[i].imgUrl + '">').appendTo('#pic')
-  //   // console.log($(this)[0].imgUrl[1])
-  //   $('#pic1').append('<div class="content_pic">' +
-  //       '<a href="">' +
-  //         '<img src="'+data[i].imgUrl+'" alt="">'+
-  //       '</a>'+
-  //     '</div>')
-  //
-  // }
-  // var i = 0
-  // $(data.serve1).each(function () {
-  //   console.log($(this))
-  //   if(i === 5){
-  //     return
-  //   }else {
-  //     i += 1
-  //   }
-  //   console.log(i)
-  //   console.log($('#pic'+i))
-  //   console.log($(this)[0])
-  //   $('#pic'+i).append('<div class="content_pic">' +
-  //     '<a href="">' +
-  //       '<img src="'+ $(this)[0].imgUrl+'" alt="">'+
-  //      '</a>'+
-  //   '</div>')
-  // })
-  // $(data).each(function (index, item) {
-  //   console.log($(this))
-  //   console.log(index, item)
-  //   // if(index === data.length - 1){
-  //   //   return
-  //   // }
-  //   console.log(index)
-  // })
-  var a = -1
-  console.log(data)
+/*  for (var i = 0; i < data.length; i++) {
+    console.log(data[i].imgUrl)
+    // $('<img src="' + data[i].imgUrl + '">').appendTo('#pic')
+    // console.log($(this)[0].imgUrl[1])
+    $('#pic1').append('<div class="content_pic">' +
+        '<a href="">' +
+          '<img src="'+data[i].imgUrl+'" alt="">'+
+        '</a>'+
+      '</div>')
+
+  }
+  var i = 0
+  $(data.serve1).each(function () {
+    console.log($(this))
+    if(i === 5){
+      return
+    }else {
+      i += 1
+    }
+    console.log(i)
+    console.log($('#pic'+i))
+    console.log($(this)[0])
+    $('#pic'+i).append('<div class="content_pic">' +
+      '<a href="">' +
+        '<img src="'+ $(this)[0].imgUrl+'" alt="">'+
+       '</a>'+
+    '</div>')
+  })
+  $(data).each(function (index, item) {
+    console.log($(this))
+    console.log(index, item)
+    // if(index === data.length - 1){
+    //   return
+    // }
+    console.log(index)
+  })
+  var a = 0
+  console.log(data)*/
   $.each(data, function (i, item) {
     // console.log(data.serve1)
     $(data).attr('partner', '')
